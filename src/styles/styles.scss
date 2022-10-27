@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+// ----
+
+.pos-rel {
+  position: relative;
+}
+
+.pos-abs {
+  position: absolute;
+}
+
+.top-0 {
+  top: 0;
+}
+.bot-0 {
+  bottom: 0;
+}
+.left-0 {
+  left: 0;
+}
+
+.w-100per {
+  width: 100%;
+}
+.h-50per {
+  height: 50%;
+}
+.h-100per {
+  height: 100%;
+}
+.h-200per {
+  height: 200%;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+// ----
+
+.App_contain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100vh;
+  // padding-top: 100px;
+
+  background-color: black;
+  border-image: url("../../images/bg-stars.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.App_title {
+  margin-bottom: 75px;
+
+  text-transform: uppercase;
+  font-size: 20px;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 5px;
+}

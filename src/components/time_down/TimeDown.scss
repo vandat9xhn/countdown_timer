@@ -1,0 +1,41 @@
+.TimeDown {
+  margin: auto;
+  width: 140px;
+  height: 140px;
+  perspective: 1000px;
+}
+
+.TimeDown_num {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  border-radius: 8px;
+  background-color: hsl(237, 18%, 59%);
+  color: hsl(345, 95%, 68%);
+  font-size: 75px;
+  font-weight: 1000;
+}
+
+// ---
+
+.TimeDown_change {
+  transform-style: preserve-3d;
+  transform-origin: center bottom;
+}
+.TimeDown_change-active {
+  transition: transform 500ms ease-in-out;
+  transform: rotateX(-180deg);
+}
+
+.TimeDown_change_front {
+  backface-visibility: hidden;
+}
+
+.TimeDown_change_back {
+  backface-visibility: hidden;
+  transform: rotateX(180deg);
+}
+.TimeDown_change_back_contain {
+  transform: translateY(-50%);
+}
